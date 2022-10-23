@@ -4,6 +4,10 @@ import Button from "../Button/Button";
 const Header = (props) => {
     const tg = window.Telegram.WebApp
 
+    useEffect(() => {
+        tg.ready()
+    }, [])
+
     const onClose = () => {
         tg.close()
     }
