@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import { useEffect } from "react";
 
 const Header = (props) => {
     const tg = window.Telegram.WebApp
